@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@layer base {
+    body {
+        @apply bg-slate-50 text-slate-900 antialiased selection:bg-indigo-500/30;
+        font-family: 'Inter', sans-serif;
+    }
+}
+@layer utilities {
+    .glass {
+        @apply bg-white/70 dark:bg-slate-900 backdrop-blur-xl border border-white/40 dark:border-slate-700/50 shadow-xl ;
+    }
+ 
+    .glass-card {
+        @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-slate-200/50 dark:border-slate-700/50 shadow-lg hover:shadow-xl transition-all duration-300;
+    }
+ 
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400;
+    }
+ 
+    .bg-gradient-premium {
+        @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 hover:bg-right-bottom transition-all duration-500;
+        background-size: 200% auto;
+    }
+ 
+    .bg-size-200 {
+        background-size: 200% auto;
+    }
+}
